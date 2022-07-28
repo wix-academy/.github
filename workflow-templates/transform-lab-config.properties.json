@@ -1,0 +1,13 @@
+{
+    "name": "Transform Lab Config",
+    "description": "Transform GitHub Lab config into GitHub Skills Readme format",
+    "iconName": "example-icon",
+    "categories": [
+        "Node.js"
+    ],
+    "filePatterns": [
+        "config.yml$",
+        "^course-details.md",
+        ".*\\.md$"
+    ]
+}

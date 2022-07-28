@@ -12,6 +12,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm install
 
       - name: Run a one-line script
         run: echo Hello from Wix Academy

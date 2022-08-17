@@ -12,13 +12,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          cache: 'npm'
-
-      - name: Run a one-line script
-        run: echo Hello from Wix Academy
         
       - name: Generate README
         uses: wix-academy/github-lab-config-to-github-skills-readme-action@v1.1

@@ -14,17 +14,13 @@ jobs:
       - uses: actions/checkout@v3
         
       - name: Generate README
-        uses: wix-academy/github-lab-config-to-github-skills-readme-action@v1.1
+        uses: wix-academy/github-lab-config-to-github-skills-readme-action@v2
         with:
           config-file: 'config.yml'
           course-details-file: 'course-details.md'
           readme-file: 'README.md'
+          inline-markdown-links: true
           
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "Wix Academy"
-          git config --global user.email "academy@wix.com"
-
-          git add -A
-          git commit -m "generate README.md from config.yml + course-details.md"
-          git push
+      - uses: stefanzweifel/git-auto-commit-action@v4.14.1
+        with:
+          commit_message: "generate README.md from config.yml + course-details.md"

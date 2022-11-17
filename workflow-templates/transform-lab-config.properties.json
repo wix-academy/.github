@@ -1,7 +1,7 @@
 {
     "name": "Transform Lab Config",
     "description": "Transform GitHub Lab config into GitHub Skills Readme format",
-    "iconName": "example-icon",
+    "iconName": "learning-logo",
     "categories": [
         "Node.js"
     ],

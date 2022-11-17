@@ -20,7 +20,7 @@ jobs:
           course-details-file: 'course-details.md'
           readme-file: 'README.md'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_READ_ACCESS_TOKEN }}
           
       - uses: stefanzweifel/git-auto-commit-action@v4.14.1
         with:

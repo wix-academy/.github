@@ -21,6 +21,12 @@ jobs:
           readme-file: 'README.md'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_READ_ACCESS_TOKEN }}
+
+#       - name: Generate WixDocs yaml & files
+#         uses: wix-academy/github-lab-config-to-wixdocs-action@v0.2
+#         with:
+#           config-file: 'config.yml'
+#           course-details-file: 'course-details.md'                
           
       - uses: stefanzweifel/git-auto-commit-action@v4.14.1
         with:
